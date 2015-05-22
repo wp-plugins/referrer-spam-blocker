@@ -1,0 +1,77 @@
+[
+    {
+        "name": "piwik/referrer-spam-blacklist",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/piwik/referrer-spam-blacklist.git",
+            "reference": "8e70713cde35101f16d46d18314456046c43367b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/piwik/referrer-spam-blacklist/zipball/8e70713cde35101f16d46d18314456046c43367b",
+            "reference": "8e70713cde35101f16d46d18314456046c43367b",
+            "shasum": ""
+        },
+        "time": "2015-05-18 11:31:13",
+        "type": "library",
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Public Domain"
+        ],
+        "description": "Community-contributed list of referrer spammers"
+    },
+    {
+        "name": "tybulewicz/referrer-spam-detector",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tybulewicz/referrer-spam-detector.git",
+            "reference": "40dc0c9e260b93669ef68fc7a92abce8fdcc0776"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/tybulewicz/referrer-spam-detector/zipball/40dc0c9e260b93669ef68fc7a92abce8fdcc0776",
+            "reference": "40dc0c9e260b93669ef68fc7a92abce8fdcc0776",
+            "shasum": ""
+        },
+        "require": {
+            "piwik/referrer-spam-blacklist": "dev-master"
+        },
+        "require-dev": {
+            "mockery/mockery": "1.0.*@dev",
+            "phpunit/phpunit": "4.6.*"
+        },
+        "time": "2015-05-21 10:32:39",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Tybulewicz\\ReferrerSpamDetector\\": "src/",
+                "Tybulewicz\\ReferrerSpamDetector\\Tests\\": "tests/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Tomasz Tybulewicz",
+                "email": "tomasz@tybulewicz.com",
+                "homepage": "http://tybulewicz.com/",
+                "role": "Developer"
+            }
+        ],
+        "description": "Detection if provided referrer string is a spamy one",
+        "homepage": "https://github.com/tybulewicz/referrer-spam-detector",
+        "keywords": [
+            "referer",
+            "referrer",
+            "spam"
+        ]
+    }
+]
